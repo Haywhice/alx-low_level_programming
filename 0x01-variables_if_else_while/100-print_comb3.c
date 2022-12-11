@@ -14,16 +14,23 @@ int main(void)
 		c = 0;
 		while (c < 10)
 		{
-			purchar('0' + d);
-			putchar('0' + c);
-
-			if (c +d != 17)
+			if (d != c && d < c)
 			{
-				putchar(',')
-				putchar(' ');
-			}
+				purchar('0' + d);
+				putchar('0' + c);
+	
+				if (c + d != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}	
+		
+			c++;
 		}
-		c++;
+		d++;
 	}
-	d++;
+	putchar('\n');
+	return (0);
+}
 
