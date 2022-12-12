@@ -1,16 +1,20 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - prints alpha in lower case
+ * main - main block
+ * Description: Get a random number and check its last digit, compare it with 5
  * Return: Always 0
  */
 int main(void)
 {
-	char lc:
+	char c = 'a';
 
-	for (ls = 'a'; lc <= 'z'; lc++)
+	while (c <= 'z')
 	{
-		putchar(lc);
+		putchar(c);
+		c++;
 	}
-	putchar('\n');
+
+	putchar('\n')
 	return (0);
 }
