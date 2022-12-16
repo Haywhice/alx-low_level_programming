@@ -6,24 +6,21 @@
  * Return:void
  */
 
-void print_square(int n)
+void print_square(int size)
 {
+	int col, row;
 
-	int i = 0, ii;
-
-	while (i < n && n > o)
+	if (size > 0)
 	{
-		ii = 0;
-		while (ii < n)
+		for (row = 0; row < size; row++)
 		{
-			_putchar('#');
-			ii++;
+			for (col = 0; col < size; col++)
+			{
+				_putchar(35);
+			}
+			_putchar('\n');
 		}
-
-		_putchar('\n');
-		i++;
 	}
-	if (i == 0)
+	else
 		_putchar('\n');
-
 }
