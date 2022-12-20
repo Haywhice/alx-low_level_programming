@@ -1,18 +1,29 @@
 #include "main.h"
 
 /**
- * _strlen - find the length of a string
- * @s: pointer to the string to check
- * Return: void
+ * main - program that prints the numbers from 1 to 100
+ * But for multiples of three print Fizz
+ * and for the multiples of five print Buzz
+ * Return: 0
  */
 
-
-int _strlen(char *s)
+int main(void)
 {
-	int i = 0;
+	int num;
 
-	while (s[i])
-		i++;
-
-	return (1);
+	for (num = 1; num <= 100; num++)
+	{
+		if (num % 3 == 0 && num % 5 == 0)
+			printf("FizzBuzz ");
+		else if (num % 3 == 0 && num % 5 != 0)
+			printf("Fizz ");
+		else if (num == 100)
+			printf("Buzz");
+		else if (num % 5 == 0 && num % 3 != 0)
+			printf("Buzz ");
+		else
+			printf("%d ", num);
+	}
+	printf("\n");
+	return (0);
 }
