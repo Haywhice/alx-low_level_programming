@@ -47,6 +47,5 @@ void print_buffer(char *b, int size)
 		printf("%c", c);
 		o += 10;
 	}
-	return (0);
 }
 
