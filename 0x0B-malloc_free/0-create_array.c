@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * create_array - Creates an array
  * and populates it
@@ -6,24 +7,13 @@
  *
  * Return: 0 on success
  */
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c)
 {
-        char *ptr;
-        unsigned int i;
+	char *array = malloc(size);
 
-        if (size == 0)
-        {
-                return (NULL);
-        }
-        ptr = malloc(sizeof (char) * size);
-
-        if (ptr == NULL)
-                return (NULL);
-
-        for (i <= size; i++)
-        {
-                ptr(i) = c;
-        }
-        return (str);
+	if (size == 0 || array == 0)
+		return (NULL);
+	while (size--)
+		array[size] = c;
+	return (array);
 }
-
