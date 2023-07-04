@@ -3,8 +3,8 @@
 /**
  * create_array - Creates an array
  * and populates it
- * @size - size of the array
- * @c - element of the array
+ * @size: number of bytes to allocate
+ * @c: an element of the array to initialize
  *
  * Return: 0 on success
  */
