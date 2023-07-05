@@ -1,8 +1,13 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * _memset - copy char
- * Return: string
+ * @nmemb: number of elements.
+ * @size: size of bytes.
+ * Return: pointer to the allocated memory
+ * if nmemb or size is 0, return NULL
+ * if malloc fails, return NULL.
  */
 
 char *_memset(char *s, char b, unsigned int n)
@@ -19,7 +24,7 @@ char *_memset(char *s, char b, unsigned int n)
 /** _calloc - allocates memory for an array using malloc
  * Return: pointer
  */
-void *_ccalloc(unsigned int nmemb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
         void *p;
 
@@ -32,4 +37,3 @@ void *_ccalloc(unsigned int nmemb, unsigned int size)
        	_memset(p, 0, (nmemb * size));
         return (p);
 }
-
